@@ -1,7 +1,0 @@
-﻿  Permutations.cpp
-C:\Users\jkosa\Desktop\Permutations\Permutations\header.h(31,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\jkosa\Desktop\Permutations\Permutations\header.h(32,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\jkosa\Desktop\Permutations\Permutations\header.h(60,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\jkosa\Desktop\Permutations\Permutations\header.h(61,25): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\jkosa\Desktop\Permutations\Permutations\header.h(73,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-  Permutations.vcxproj -> C:\Users\jkosa\Desktop\Permutations\Permutations\Debug\Permutations.exe

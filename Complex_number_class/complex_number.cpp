@@ -141,9 +141,40 @@ void Complex_number::complex_multiple(const Complex_number* z){
 }
 
 Complex_number Complex_number::complex_divide(const Complex_number* c1, const Complex_number* c2){
-	this->re = (c1->modulus * c2->modulus * cos((c1->angle - c2->angle)));
-	this->im = (c1->modulus * c2->modulus * sin((c1->angle - c2->angle)));
+	this->re = (c1->modulus / c2->modulus * cos((c1->angle - c2->angle)));
+	this->im = (c1->modulus / c2->modulus * sin((c1->angle - c2->angle)));
 	return *this;
+}
+
+void Complex_number::complex_divide(const Complex_number* z){
+	if(this->im > 0){
+		cout<<"Divide of complex number: ("<<this->re<<" + "<<this->im<<"i) / ";
+	}
+	else if(this->im < 0){
+		cout<<"Divide of complex number: ("<<this->re<<" - "<<(this->im) * (-1)<<"i) / ";	
+	}
+	else{
+		cout<<"Divide of complex number: "<<this->re<<" / ";	
+	}
+	if(z->im > 0){
+		cout<<"("<<z->re<<" + "<<z->im<<"i) = ";
+	}
+	else if(z->im < 0){
+		cout<<"("<<z->re<<" - "<<(z->im) * (-1)<<"i) = ";	
+	}
+	else{
+		cout<<z->re<<" = ";
+	}
+	if((this->modulus / z->modulus * sin((this->angle - z->angle))) > 0){
+		cout<<this->modulus / z->modulus * cos((this->angle - z->angle))<<" + "<<this->modulus / z->modulus * sin((this->angle - z->angle))<<"i";
+	}
+	else if((this->modulus / z->modulus * sin((this->angle - z->angle))) < 0){
+		cout<<this->modulus / z->modulus * cos((this->angle - z->angle))<<" - "<<(this->modulus / z->modulus * sin((this->angle - z->angle))) * (-1)<<"i";	
+	}
+	else{
+		cout<<this->modulus / z->modulus * cos((this->angle - z->angle));	
+	}
+	cout<<endl;	
 }
 
 void Complex_number::complex_conjugate(){

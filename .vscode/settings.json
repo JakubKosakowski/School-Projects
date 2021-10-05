@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "Enabled",
+    "git.enableSmartCommit": false,
     "files.associations": {
         "cmath": "cpp"
     }
+    
 }

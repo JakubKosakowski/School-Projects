@@ -113,6 +113,13 @@ public:
 	Complex_number complex_divide(const Complex_number*, const Complex_number*);
 
 	/**
+	 * @brief Show divide of this complex_number object with other complex_number object
+	 * 
+	 * @param const Complex_number*
+	 */
+	void complex_divide(const Complex_number*);
+
+	/**
 	 * @brief Perform complex number conjugate
 	 * 
 	 */

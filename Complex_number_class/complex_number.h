@@ -104,6 +104,15 @@ public:
 	void complex_multiple(const Complex_number*);
 
 	/**
+	 * @brief Count divide of complex numbers
+	 * 
+	 * @return Complex_number
+	 * @param const Complex_number*
+	 * @param const COmplex_number*
+	 */
+	Complex_number complex_divide(const Complex_number*, const Complex_number*);
+
+	/**
 	 * @brief Perform complex number conjugate
 	 * 
 	 */
@@ -161,6 +170,6 @@ public:
 };
 
 
-#include "complex_numbers.cpp"
+#include "complex_number.cpp"
 
 #endif //complex_numbers_H

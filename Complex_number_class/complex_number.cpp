@@ -140,6 +140,12 @@ void Complex_number::complex_multiple(const Complex_number* z){
 	cout<<endl;
 }
 
+Complex_number Complex_number::complex_divide(const Complex_number* c1, const Complex_number* c2){
+	this->re = (c1->modulus * c2->modulus * cos((c1->angle - c2->angle)));
+	this->im = (c1->modulus * c2->modulus * sin((c1->angle - c2->angle)));
+	return *this;
+}
+
 void Complex_number::complex_conjugate(){
 	this->re_con = this->re;
 	this->im_con = (this->im)*(-1);

@@ -40,7 +40,7 @@ Complex_number::Complex_number(const Complex_number* c1){
 	this->complex_conjugate();
 }
 
-void Complex_number::print_cn(){
+void Complex_number::print(){
 	cout<<"Complex number: ";
 	if(this->im < 0){
 		cout<<this->re<<" - "<<(this->im)*(-1)<<"i"<<endl;

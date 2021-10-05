@@ -64,7 +64,7 @@ public:
 	/**
 		*@brief Function print all informations about complex number
 	*/
-	void print_cn();
+	void print();
 
 	/**
 	 * @brief Count complex number modulus
